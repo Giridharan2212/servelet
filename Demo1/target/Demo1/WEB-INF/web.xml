@@ -1,0 +1,47 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <filter>
+  	<filter-name>PerformanceFilter</filter-name>
+  	<display-name>PerformanceFilter</display-name>
+  	<description></description>
+  	<filter-class>loginjava.PerformanceFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>PerformanceFilter</filter-name>
+  	<url-pattern>/PerformanceFilter</url-pattern>
+  </filter-mapping>
+  <servlet>
+  	<servlet-name>Logincontroller</servlet-name>
+  	<display-name>Logincontroller</display-name>
+  	<description></description>
+  	<servlet-class>loginjava.Logincontroller</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>display</servlet-name>
+  	<display-name>display</display-name>
+  	<description></description>
+  	<servlet-class>loginjava.display</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>delete</servlet-name>
+  	<display-name>delete</display-name>
+  	<description></description>
+  	<servlet-class>loginjava.delete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Logincontroller</servlet-name>
+  	<url-pattern>/Logincontroller</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>display</servlet-name>
+  	<url-pattern>/display</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>delete</servlet-name>
+  	<url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+</web-app>
